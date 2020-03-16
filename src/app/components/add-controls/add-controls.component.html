@@ -1,0 +1,69 @@
+<div class="container card-wrap">
+  <app-header></app-header>
+    <div>
+  <span class="text-header align-header">Persona1
+</span>
+<button class="text-header align-button" (click)="save()">Save</button>
+    </div>
+  <div class="middle-container">
+<div class="mrg20"><label>Industry</label>
+  <app-multi-select [list]="industryList"
+  [selectedValues]="selectedIndustries"
+  [setting]="setting"
+  [controlName]= "'industry'"
+  (values)="selectedControls($event)"
+  ></app-multi-select>
+    </div>
+    <div class="row">
+    <div class="col-sm-6">
+      <div class="mrg20">
+      <label>Revenue</label>
+    <app-slider  [minValue]="revenueMinValue"
+    [maxValue]="revenueMaxValue"
+    [options]="options"
+    [controlName]= "'revenue'"
+    (values)="selectedControls($event)"
+    >
+  </app-slider>
+      </div>
+    </div>
+
+
+    <div class="col-sm-6">
+      <div class="mrg20">
+      <label>Employee Size</label>
+      <app-slider  [minValue]="employeeMinValue"
+      [maxValue]="employeeMaxValue"
+      [options]="options"
+      [controlName]= "'employeeSize'"
+      (values)="selectedControls($event)"
+      >
+    </app-slider>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+    <div class="mrg20"><label>Location</label>
+      <app-multi-select [list]="locationList"
+      [selectedValues]="selectedlocation"
+      [setting]="setting"
+      [controlName]= "'location'"
+      (values)="selectedControls($event)"
+      ></app-multi-select>
+    </div>
+    </div>
+    <div class="col-sm-6">
+      <div  class="mrg20">
+      <label>Department</label>
+      <app-multi-select [list]="departmentList"
+      [selectedValues]="selectedDepartment"
+      [setting]="setting"
+      [controlName]= "'department'"
+      (values)="selectedControls($event)"
+      ></app-multi-select>
+    </div>
+    </div>
+    </div>
+</div>
+</div>

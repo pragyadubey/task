@@ -1,0 +1,32 @@
+<div class="container card-wrap">
+<app-header></app-header>
+  <div>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+<div class="col-sm-4">
+  <div class="text-header">
+  <span>Persona1
+    <a (click)="edit()" class="cursor-pointer" > <i class="fa fa-pencil" aria-hidden="true"></i></a>
+    <span class="plus-icon-wrap"><i class="fa fa-plus" aria-hidden="true"></i>
+</span>
+  </span>
+  </div>
+  <div class="control-wrap" *ngFor="let control of controlSelected">
+    <span [ngClass]="control.isSelected === true ? 'activeCheck' : 'inActiveCheck'">
+      <i class="fa fa-check-circle" aria-hidden="true"></i></span>
+    <span>{{control.displayName}}</span>
+  </div>
+</div>
+<div class="col-sm-6 text-centre">
+  <h3>MetricFox</h3>
+  <div class="semi-donut margin"
+       style="--percentage : 80; --fill: dodgerblue ;">
+    <div>80%</div>
+    <div class="donut-text">Matching</div>
+  </div>
+  <button type="button" class="btn btn-info text-centre show">Show similar Companies</button>
+</div>
+    </div>
+</div>
+</div>

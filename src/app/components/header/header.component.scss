@@ -1,0 +1,24 @@
+.heart-icon-wrap{
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: grey;
+  background-color: white;
+
+  .fa-heart{
+    font-size: 16px;
+    height: 22px;
+    width: 30px;
+    text-align: center;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.header{
+  background-color: lightgrey;
+}
+.header-text {
+  width: 85%;
+  text-align: center;
+}
